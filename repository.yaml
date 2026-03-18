@@ -1,0 +1,5 @@
+# Required for Add-on Store: Settings → Add-ons → Repositories
+# https://developers.home-assistant.io/docs/add-ons
+name: HAVNC
+url: https://github.com/underscorejasiu/havnc
+maintainer: underscorejasiu

@@ -10,7 +10,18 @@ Very useful in case your browser don't support all the newfangled webstuff but e
 For example the iPad2.
 
 ## Usage
-Clone into your /addons/ folder (you need a way to access that, outside of the scope of this documentation currently). Refresh the addons page and install it.
+
+### From the Add-on Store (recommended)
+
+1. **Settings → Add-ons → Add-on Store** → **⋮** → **Repositories**
+2. Add: `https://github.com/underscorejasiu/havnc`
+3. Refresh; install **HAVNC**
+
+The repo must include **`repository.yaml`** at the root (this file). Without it, Home Assistant reports *“is not a valid add-on repository”*.
+
+### Local `/addons` folder
+
+Clone into your `/addons/` folder, refresh the add-ons page, and install.
 
 ## Tips
 [Kiosk-mode](https://github.com/NemesisRE/kiosk-mode) is really useful for a cleaner look.
