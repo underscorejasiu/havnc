@@ -1,6 +1,13 @@
 # Changelog
 
-Notable and less notable changes. 
+Notable and less notable changes.
+
+## [0.1.0]
+
+- **Require password** checkbox: off = VNC has no password (trusted networks only); on = use the password field.
+- Default **port 6080** (was 8080). Update bookmarks and port mappings if upgrading.
+- Default **resolution 1024x600** (was 768x1024).
+- Upgrades: if your saved config has no `require_password` yet but still has a **password**, VNC auth stays enabled until you turn **Require password** off or clear the password.
 
 ## [0.0.9]
 

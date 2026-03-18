@@ -4,9 +4,12 @@ configuration:
     description: The URL of your Home Assistant instance, optionally with the kiosk arg if you have that (e.g., http://homeassistant:8123/wallboard?kiosk)
   resolution:
     name: Screen Resolution
-    description: The resolution for the VNC viewer in WIDTHxHEIGHT format (e.g., 768x1024)
+    description: The resolution for the VNC viewer in WIDTHxHEIGHT format (e.g., 1024x600)
+  require_password:
+    name: Require password
+    description: When enabled, VNC requires the password below. When disabled, anyone who can reach the add-on port can connect (use only on trusted networks).
   password:
-    name: Password to access VNC (mandatory)
-    description: A password used to access VNC. Sent over clear text on your network so don't pick one you like to keep secret. You can make VNC auto login by adding it at the end when accessing the VNC viewer. Like http://homeassistant.local:8080/?password=yoursupersecretpassword
+    name: VNC password
+    description: Only used when "Require password" is on. Sent in clear text on your network. Optional auto-login in the URL, e.g. http://homeassistant.local:6080/?password=yoursupersecretpassword
 network:
-  8080/TCP: The port where you will find the noVNC webpage. Use it to access the VNC view through a browser by going to <homeassistant-address>:<port> on your device.
+  6080/TCP: The port for the noVNC webpage. Open http://<home-assistant-host>:6080 in your browser (or the mapped port shown in the add-on).
