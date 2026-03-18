@@ -18,4 +18,4 @@ schema:
   url: "str"
   resolution: "str"
   require_password: "bool"
-  password: "password?"
+  password: "str?"
